@@ -24,14 +24,15 @@
 --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
 }
 body {
-  width: 100%;
-  min-height: 100vh;
-   overflow: hidden;
-   font-family: 'Josefin Sans', sans-serif;
-   z-index: 1000;
- }
+width: 100%;
+min-height: 100vh;
+overflow: hidden;
+font-family: 'Josefin Sans', sans-serif;
+z-index: 1000; 
+background-color: var(--Very-Dark-Blue);
 
-.form-input{
+ }
+ .form-input{
   width: 57rem;
   height: 5rem;
   background-color: var(--Very-Dark-Desaturated-Blue);;
@@ -42,7 +43,7 @@ body {
   color: var(--Dark-Grayish-Blue);
   outline: none;
   font-family: 'Josefin Sans', sans-serif;
-  
+  z-index: -1000;
 }
 .form-inputs{
   width: 57rem;
@@ -55,7 +56,6 @@ body {
   color: var(--Dark-Grayish-Blue);
   outline: none;
   font-family: 'Josefin Sans', sans-serif;
-  
 }
 
 html{
@@ -65,31 +65,34 @@ html{
 .container {
   width: 100%;
   height: 100vh;
+ 
+
 }
 .div1{
   width: 100%;
-  height: 40rem;
+  height: 15rem;
+  z-index: 1000;  
 }
 .div2{
   width: 100%;
-  height: 100vh;
-  background-color:var(--Very-Dark-Blue);
+  height: 30rem;
 }
 .div3{
   width: 100%;
   height: 100vh;
   background-color:var(--Very-Light-Grayish-Blue);
+ 
 }
 
 .app{
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   transition: all 0.3s ease-in;
-
+  align-items: center;
+  z-index: 1000;
+  
 }
 .picture{
   width: 100%;
@@ -105,9 +108,7 @@ html{
   transition: all;
   transition-timing-function: ease;
   transition-delay: 0.3s;
- 
 }
-
 .pictures{
   width: 100%;
   height: 30rem;
@@ -122,8 +123,6 @@ html{
   transition: all;
   transition-timing-function: ease-in;
   transition-delay: 0.3s;
- 
-
 }
 h1{
   font-size: 3rem;
@@ -131,17 +130,15 @@ h1{
   font-weight: 700;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 2rem;
+  
 }
 .image{
   width: 4rem;
   height: 4rem;
 }
 .flexbox{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  margin-top: -53rem;
+  z-index: 1000; 
+  margin-top: -20%;
 }
 .form-input:focus{
   border: none;
@@ -180,8 +177,6 @@ ul{
   overflow-y:auto;
   width: 58rem;
   height: 37rem;
-  margin-top: 2rem;
-
 }
 
 ul:hover{
@@ -300,6 +295,31 @@ input[type="checkbox"] {
   color: blue;
 }
 @media screen and (max-width:600px) {
+  h1{
+    font-size: 3rem;
+    color: var(---LightGrayishBlue);
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2rem;
+    padding-bottom: 5rem;
+    
+  }
+  .image{
+    width: 4rem;
+    height: 4rem;
+    padding-bottom: 5rem;
+  }
+  
+  ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow-y:auto;
+    width: 58rem;
+    height: 37rem;
+   
+  }
   .picture{
     width: 100%;
     height: 24rem;
@@ -687,8 +707,7 @@ ul{
  margin-top: -2rem;
  border-radius: 0.4rem;
  color: var(--Dark-Grayish-Blue);
- font-size: 1
- rem;
+ font-size: 1rem;
  font-weight: 400;
  white-space: nowrap;
 

@@ -5,7 +5,7 @@ export default function PackingList({items,onDeleteItem,Darkmode,onToggleItems,o
   const remainingItems = items.filter((item) => !item.checked).length;
   return(
     <div >
-      <ul>
+      <ul >
         <div>
         {
         items.map((item)=>

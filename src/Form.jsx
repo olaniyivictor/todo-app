@@ -28,9 +28,9 @@ export default function Form({onAddItems,Darkmode}) {
     }
   
   return (
-    <div className='flexbox'>
-    <div  >
-      <form  onSubmit={handleSubmit}   >
+    <div>
+    <div className='flexbox'  >
+      <form  onSubmit={handleSubmit}    >
         <div>
         <input placeholder="Create a new todo..." className={`${Darkmode?'form-input':'form-inputs'}`} value ={form} onChange={(e)=>{
             console.log(e.target.value)

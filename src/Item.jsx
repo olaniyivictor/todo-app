@@ -3,7 +3,7 @@ import iconcross from "../src/assets/images/icon-cross.svg"
 import './index.css';
 export default function Item({item,onDeleteItem,Darkmode, onToggleItems}){
     return(
-        <div > 
+        <div  > 
             
         <li className={`${Darkmode?`flexa`:`flexan`}`}  >
             <div className='victor'>
