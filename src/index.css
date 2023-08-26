@@ -181,7 +181,7 @@ ul:hover{
 }
 .flex-man{
   display: flex;
-  gap: 7rem;
+
   padding: 1.2rem;
   align-items: center;
   background-color: var(--Very-Dark-Desaturated-Blue);
@@ -194,7 +194,7 @@ ul:hover{
 }
 .flex-mans{
   display: flex;
-  gap: 3rem;
+  
   padding: 1.2rem;
   align-items: center;
   background-color: white;
@@ -208,9 +208,9 @@ ul:hover{
 }
 .flexman{
   display: flex;
-  gap: 3rem;
   overflow-x: hidden;
   width: 58rem;
+  gap: 2rem;
   white-space: nowrap;
   height: 4rem;
   align-items: center;
@@ -383,7 +383,6 @@ ul{
 }
 .flex-man{
   display: flex;
-  gap: 7rem;
   padding: 1.2rem;
   align-items: center;
   background-color: var(--Very-Dark-Desaturated-Blue);
@@ -396,7 +395,6 @@ ul{
 }
 .flex-mans{
   display: flex;
-  gap: 3rem;
   padding: 1.2rem;
   align-items: center;
   background-color: white;
@@ -410,7 +408,6 @@ ul{
 }
 .flexman{
   display: flex;
-  gap: 3rem;
   overflow-x: hidden;
   width: 50rem;
   white-space: nowrap;
@@ -494,7 +491,6 @@ ul{
 }
 .flex-man{
  display: flex;
- gap: 4rem;
  padding: 1.2rem;
  align-items: center;
  background-color: var(--Very-Dark-Desaturated-Blue);
@@ -507,7 +503,6 @@ ul{
 }
 .flex-mans{
  display: flex;
- gap: 3rem;
  padding: 1.2rem;
  align-items: center;
  background-color: white;
@@ -521,7 +516,6 @@ ul{
 }
 .flexman{
  display: flex;
- gap: 3rem;
  overflow-x: hidden;
  width: 50rem;
  white-space: nowrap;
@@ -595,16 +589,15 @@ ul{
  list-style-type: none;
  display: flex;
  flex-direction: column;
- gap: 2rem;
  overflow-y:auto;
  width: 35rem;
  height: 37rem;
  margin-top: 2rem;
+ gap: 3rem;
 
 }
 .flex-man{
  display: flex;
- gap: 1rem;
  padding: 1.2rem;
  align-items: center;
  background-color: var(--Very-Dark-Desaturated-Blue);
@@ -617,7 +610,6 @@ ul{
 }
 .flex-mans{
  display: flex;
- gap: 2rem;
  padding: 1.2rem;
  align-items: center;
  background-color: white;
@@ -632,7 +624,6 @@ ul{
 }
 .flexman{
  display: flex;
- gap: 3rem;
  overflow-x: hidden;
  width: 35rem;
  white-space: nowrap;
