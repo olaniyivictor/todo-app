@@ -30,7 +30,7 @@ function handleToggleItem(id){
   }
 //writing a function to clear the list and turn it to an empty array
 function handleClearList(){
-    setItems([])
+    setItems(items.filter((item) => !item.checked))
 }
     return(
         <div className='app'>
