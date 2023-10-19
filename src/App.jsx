@@ -4,12 +4,19 @@ import ToggleTheme from './ToggleTheme';
 import Form from './Form'
 import PackingList from './PackingList';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 export default function App(){
 const [darkmode,setdarkmode] = useState(true)
 
 
-const [items,setItems]=useState([]);
+const [items,setItems]=useState(function(){
+  const storedItems = localStorage.getItem('items');
+  return  storedItems ? JSON.parse(storedItems) : [];
+});
+useEffect(function(){
+  localStorage.setItem('items',JSON.stringify(items))
+
+},[items])
 //writing a function to add the current items to the previous item
 function handleAddItem(item){
  console.log(item);
